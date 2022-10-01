@@ -1,6 +1,8 @@
 // Add variables here
 @use '../abstracts/variables' as *;
 
+
+
 // Overrides Bootstrap
 .nav-link {
     padding: 0;
@@ -8,12 +10,15 @@
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0;
+    font-weight: 500;
+    font-size: 1em;
+
+    
 }
 
 // Style Nav
 .navbar {
     &.navbar-expand-lg {
-
         .nav {
             &-item {
                 margin-left: 20px;
@@ -31,9 +36,7 @@
             &-link {
                 position: relative;
                 transition: color 0.3s linear;
-                font-weight: 500;
                 
-
                 &:after {
                     content: "";
                     position: absolute;
@@ -42,14 +45,18 @@
                     width: 0;
                     height: 2px;
                     border-radius: 2px;
-                    background-color: $secondaryColor;
-                    transition: all 0.3s linear;
+                    transition: all 0.3s linear;             
                     
                 }
 
                 &.active {
+                    
                     color: $secondaryColor;
                     &:after {
+                        height: 2px;
+                        border-radius: 2px;
+                        transition: all 0.3s linear;
+                        background-color: $secondaryColor;
                         width: 100%;
                         bottom: -1px;
                          
@@ -65,8 +72,9 @@
                     }
 
                     &:before {
-                        content: "\ea5e";
-                        font-family: 'LineIcons';
+                        content: "\f107";
+                        font-family: 'Line Awesome Free';
+                        font-weight: 900;
                         position: absolute;
                         right: 0;
                         font-size: 12px;
@@ -89,7 +97,6 @@
         &__action {
             li {
                 display: inline-block;
-                font-size: 20px;
                 cursor: pointer;
                 color: $primaryColor;
                 transition: color 0.3s linear;
@@ -103,7 +110,43 @@
         }
     }
 }
-.dropdown-item{
-   padding: 0px;
-  margin: 10px;
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: transparent;
+}
+.offcanvas-header{
+    img{
+        max-width: 75%;
+
+    }
+    button{
+        
+        border: 0;
+        background-color: transparent;
+        padding: 0;
+       font-size: 20px;
+       cursor: pointer;
+       color: #000000;
+       transition: color 0.3s linear;
+    }
+}
+.navbar-toggler {
+   border:0;
+   color: #000000; 
+   font-size: 20px;
+   background-color: transparent;
+   border-radius: 0;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
+//.dropdown-item{
+//}
+//responsiveness cntrolling 
+//offcanvus --
+.navbar-nav .dropdown-menu {
+    position: static;
+    border: 0;
+    background-color: #f7f7f7;
 }
