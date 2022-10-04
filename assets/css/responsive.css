@@ -7,7 +7,7 @@
 }
 
 .t-clr-secondary {
-  color: #CE3C31 !important;
+  color: #FF0000 !important;
 }
 
 .pt-100 {
@@ -34,22 +34,6 @@
 /***************************
     Add Responsive Here
 ***************************/
-@media (max-width: 991px) {
-  .navbar-item__menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    box-shadow: 1px 2px 12px 0 rgba(0, 0, 0, 0.04);
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-}
-.hero-section__content h1 {
-  font-size: 3em;
-  margin-bottom: 0.475em;
-}
-
 @media (max-width: 767px) {
   body {
     font-size: 0.9375em;
@@ -80,52 +64,5 @@
   .hero-section__content h1 {
     font-size: 2em;
     margin-bottom: 0.65em;
-  }
-}
-@media (max-width: 575px) {
-  .navbar-itemLogo {
-    width: 30%;
-  }
-}
-@media (min-width: 992px) {
-  /******* For Nav *******/
-  .dropdown-menu {
-    display: block;
-    transform: translateY(10px);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    padding: 0;
-  }
-  .nav-item:hover .dropdown-menu {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: all;
-  }
-}
-@media (min-width: 992px) {
-  .navbar-expand-lg .offcanvas .offcanvas-body {
-    display: flex;
-    flex-grow: 0;
-    padding: 0;
-    justify-content: center;
-    overflow-y: visible;
-  }
-}
-@media (max-width: 990px) {
-  .navbar.navbar-expand-lg .nav-item {
-    margin-bottom: 20px;
-  }
-  .navbar.navbar-expand-lg .nav-item {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .dropdown-menu {
-    position: absolute;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 12px 10px rgba(236, 236, 236, 0.55);
-    border: 0;
   }
 }/*# sourceMappingURL=responsive.css.map */

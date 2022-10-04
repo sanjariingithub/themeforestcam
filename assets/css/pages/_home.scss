@@ -8,14 +8,17 @@
     &-section {
         padding-top: 100px;
         padding-bottom: 100px;
-        background-color: $primaryColor;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+
         &__content {
             text-align: center;
             max-width: 960px;
             margin-left: auto;
             margin-right: auto;
             h4 {
-                color: #ffffff;
+                color:#CDCDCD!important;
                 font-size: 1.5em;
                 font-family: 'Inter Regular';
                 margin-bottom: 0.5em;
@@ -24,8 +27,7 @@
             h1 {
                 color: #ffffff;
                 font-size: 5em;
-                margin-bottom: 0.275em;
-                line-height: 1.4;
+                margin-bottom: 0.475em;
             }
             .main-btn {
                 color: #ffffff;
@@ -35,35 +37,68 @@
 }
 
 // Hot deals section
+
+
+/*************** hot deals carousel section ***************/
+
+
+//----------------Hot deals section----------------\\
+
 .hot-deals {
     &__carousel {
-        &--area {
-            padding-left: 40px;
+        .owl-nav {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+
+            [class*=owl] {
+                position: unset;
+                left: auto;
+                top: auto;
+            }
         }
+
+        &--area {
+            padding-left: 75px;
+            position: relative;
+
+            .owl-carousel {
+                position: unset;
+            }
+        }
+
         .item {
-            
+            background-color: #ffffff;
             border: 1px solid $borderColor;
             border-radius: 8px;
+            height: 100%;
         }
     }
 }
 
-/*************** hot deals carousel section ***************/
-
-.owl-carousel owl-theme hot-deals__carousel{
-    position: relative;
-    height: 100%;
+.hot-deals__carousel.owl-carousel .owl-nav button {
+    font-size: 30px;
+    color: $secondaryColor;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
 }
-.hot-deals__carousel .owl-nav{
-    position: absolute;
-    display: flex;
-    top:7%;
-    left: -56px;
-    transform: translateY(50%);
-    flex-direction: column;
-    margin-bottom: 15px;
+@media (max-width: 991px){
+.hot-deals__carousel.owl-theme .owl-nav {
+    position: unset;
+    top: auto;
+    left: auto;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+}
+.hot-deals__carousel--area {
+    padding-left: 10px;
+}
+}
     
-}
 
 /*skwed*/
 .product {

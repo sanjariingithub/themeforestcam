@@ -36,3 +36,9 @@
 .offcanvas-header-info-content-item:not(:last-child){
     margin-bottom: 15px;
 }
+@include breakpoint-max(990px){
+    .offcanvas-header-info-content-item{
+    border-bottom: 1px solid  rgb(212, 210, 210);
+    padding-bottom: 10px;
+}
+}

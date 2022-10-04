@@ -1,21 +1,11 @@
 // Add variables here
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+
 
 /*************** hot deals carousel section ***************/
 
-.owl-carousel owl-theme hot-deals__carousel{
-    position: relative;
-    height: 100%;
-}
-.hot-deals__carousel .owl-nav{
-    position: absolute;
-    display: flex;
-    top:7%;
-    left: -56px;
-    transform: translateY(50%);
-    flex-direction: column;
-    margin-bottom: 15px;   
-}
 
 /***featured section***/
 /**skew-discoverpart_**/

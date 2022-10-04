@@ -1,49 +1,89 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Product Card CSS
 
 .product-card {
-    margin-bottom: 20px;
-    height: calc(100% - 20px);
+    &__box {
+        border: 1px solid #E3E3E3;
+        border-radius: 8px;
+        background-color: transparent;
+        padding: 60px 25px;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+    &__single {
+        .product-card__box {
+            padding: 40px 25px;
+            figure {
+                margin-bottom: 0;
+                img {
+                    height: 140px;
+                    display: block;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
 }
-.product-card__box {
-    padding: 46px 15px;
-    background: #fff;
-    box-shadow: 0px 1px 94px 0px #e2dede8c;
-    position: relative;
-    margin-bottom: 15px;
-}
-.product-card__box figure {
-    margin-bottom: 0;
-}
-.product-card__box figure img {
-    height: 120px;
-    display: inline-block!important;
-    width: auto!important;
-    box-shadow: 0px 0px 58px rgba(204, 203, 203, 0.25);
-}
-.product-card__info {
-    padding: 3px 10px;
-    font-size: 8px;
+
+.product-card__info{
+    padding: 8px 7px;
+    font-size: 13px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     position: absolute;
     top: 20px;
-}
-.product-card__info--left {
-    left: 15px;
-}
-.product-card__info--right {
-    right: 15px;
-}
-.product-card__info--red {
-   background-color:  #B22625;
     color: #ffffff;
+    &--left {
+        left: 15px;
+    }
+    &--right {
+        right: 15px;
+    }
+    &--red {
+        background-color: $secondaryColor;    
+    }
+    &--blue {
+        background-color: $gray;
+    }
+
 }
-.product-card__info--blue {
-    background-color: #3a8d02;
-    color: #ffffff;
+
+.product-card {
+    &__content {
+        &--title {
+            color: $titleRed;
+            font-weight: 400;
+            font-size: 14px;
+            &:not(:last-child) {
+                margin-bottom: 0.6em;
+            }
+        }
+
+        &--subtitle {
+            color: #0C0C0C;
+            margin-bottom: 0.5em;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        &--price {
+            color: $primaryColor;
+            font-size: 16px;
+            font-weight: 600;
+            del {
+                opacity: 0.2;
+                font-weight: 400;
+            }
+        }
+    }
 }
-.color-red {
-    color: $secondaryColor !important;
-}
-.owl-carousel .product-card {
-    margin-bottom: 0;
-    height: 100%;
+
+// Responsive
+@include breakpoint-max(767px) {
+    .product-card__box {
+        padding: 40px 30px;
+    }
 }

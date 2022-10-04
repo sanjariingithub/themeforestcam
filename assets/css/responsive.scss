@@ -4,35 +4,7 @@
 // Import scss files here
 @use './abstracts/index' as *;
 
-// For max-width: 991px
-@include breakpoint-max(991px) {
-    .navbar-item__menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        box-shadow: 1px 2px 12px 0 rgb(0 0 0 / 4%);
-        padding-top: 10px;
-        padding-bottom: 10px;
-    
-        }
-
-    }
-
-    // Hero
-    .hero {
-        &-section {
-
-            &__content {
-
-                h1 {
-                    font-size: 3em;
-                    margin-bottom: 0.475em;
-                }
-            }
-        }
-    }
-
+   
 
 // For max-width: 767px
 @include breakpoint-max(767px) {
@@ -81,61 +53,3 @@
     }
 }
 
-// For max-width: 575px
-@include breakpoint-max(575px) {
-    .navbar-item {
-        &Logo {
-            width: 30%;
-        }
-    }
-}
-
-// For min-width: 992px
-@include breakpoint-min(992px) {
-
-    /******* For Nav *******/
-    .dropdown-menu {
-        display: block;
-        transform: translateY(10px);
-        opacity: 0;
-        pointer-events: none;
-        transition: all 0.3s ease;
-        padding: 0;
-    }
-
-    .nav-item {
-        &:hover {
-            .dropdown-menu {
-                transform: translateY(0);
-                opacity: 1;
-                pointer-events: all;
-            }
-        }
-    }
-}
-@include breakpoint-min(992px){
-.navbar-expand-lg .offcanvas .offcanvas-body {
-    display: flex;
-    flex-grow: 0;
-    padding: 0;
-    justify-content: center;
-    overflow-y: visible;
-}
-}
-@include breakpoint-max(990px){
-    .navbar.navbar-expand-lg .nav-item {
-            margin-bottom: 20px;
-}
-.navbar.navbar-expand-lg .nav-item{
-    margin-left: 0px;
-    margin-right: 0px;
-}
-}
-@media (min-width: 992px){
-    .navbar-expand-lg .navbar-nav .dropdown-menu {
-        position: absolute;
-        background: #FFFFFF;
-        box-shadow: 0px 1px 12px 10px rgb(236 236 236 / 55%);
-        border: 0;
-    }
-    }
