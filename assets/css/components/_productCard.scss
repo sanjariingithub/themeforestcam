@@ -26,6 +26,23 @@
         }
     }
 }
+.featured-category__section{
+.product-card {
+    &__box {
+        border: 1px solid #E3E3E3;
+        border-radius: 8px;
+        background-color: transparent;
+        padding: 60px 25px;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+   &__content{
+      &--title{
+        color: $primaryColor!important;
+      }
+   }
+}
+}
 
 .product-card__info{
     padding: 8px 7px;

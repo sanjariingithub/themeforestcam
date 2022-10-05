@@ -20,7 +20,7 @@ jQuery(function ($) {
                 items:1
             }
         }
-    });
+    })
     // Hot Deals Carousel ends
 
     $('.hot-deals__carousel').owlCarousel({
@@ -44,4 +44,55 @@ jQuery(function ($) {
         }
     })
 
+// New Product Carousel starts
+
+let newCarousel = document.querySelectorAll(".new-product__carousel");
+for (let i = 0; i < newCarousel.length; i++) {
+    console.log($("#new-carousel-", i + 1));
+    $(`#new-carousel-${i + 1}`).owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
+}
+
+// Selection tab
+$(".new-product__section .section-header__action--tab li").on("click", function () {
+    $(this).siblings().removeClass("active");
+    $(this).addClass("active");
+    let idAttribute = $(this).attr("data-id");
+    console.log(idAttribute);
+    $(".new-product__area").find(`[data-carousel='${idAttribute}']`).addClass("active").siblings().removeClass("active");
+});
+
+});
+// Trending Offers Carousel starts
+$('.trending--offers__carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    dots: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 2
+        }
+    }
 });
