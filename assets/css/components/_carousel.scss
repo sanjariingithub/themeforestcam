@@ -98,7 +98,7 @@
             .owl-nav {
                 [class*=owl-] {
                     position: absolute;
-                    top: 50%;
+                    top: 30%;
                 }
                 .owl {
                     &-prev {
@@ -175,3 +175,53 @@
     
 
 }
+
+
+//new-product
+//new-product
+.featured-product__section{
+    @include breakpoint-min(1100px) {
+        .owl {
+            &-theme {
+                .owl-nav {
+                    .owl {
+                        &-prev {
+                            left: -60px;
+                            top: 121px;
+                        }
+                        &-next {
+                            right: -60px;
+                            top: 121px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+}
+
+.featured-product__section{
+    @include breakpoint-max(1100px) {
+        .owl {
+            &-theme {
+                .owl-nav {
+                    .owl {
+                        &-prev {
+                            left: -47px;
+                            top: 121px;
+                        }
+                        &-next {
+                            right: -47px;
+                            top: 121px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+}
+
