@@ -3,13 +3,17 @@
 
 // Add Colors here
 
+body {
+    color: $primaryColor;
+}
 
 h1, h2, h3, h4, h5, h6 {
-    color: #000000;
+    // color: #000000;
 }
 
 a {
     color: $secondaryColor;
+    transition: 0.3s linear;
     &:hover {
         color: $secondaryColor!important;
     }

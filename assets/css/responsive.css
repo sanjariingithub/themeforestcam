@@ -1,9 +1,13 @@
+:root {
+  --nav-height: 85px;
+}
+
 .bg-gray {
   background-color: #f8f8f8;
 }
 
 .t-clr-primary {
-  color: #0C0C0C !important;
+  color: #010101 !important;
 }
 
 .t-clr-secondary {
