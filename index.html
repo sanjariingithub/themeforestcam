@@ -9,40 +9,58 @@
 
     <!--================= Link CSS Here =================-->
     <!-- Vendor CSS -->
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
+
+    <!-- Owl Carousel CSS -->
     <link rel="stylesheet" href="./assets/css/vendor/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/vendor/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./assets/css/vendor/lineicons.css">
+
+    <!-- Line Awesome Icon CSS -->
+    <link rel="stylesheet" href="./assets/icons8/css/line-awesome.min.css">
+
+     <!-- Animate CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
-    <!--fontawsome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--8icon-line-->
-    <link rel="stylesheet" href="./assets/icons8/css/line-awesome.min.css">
 
 
 </head>
 
 <body>
-    <header>
+
+    <!--***********************
+        Header Starts
+    ************************-->
+    <header class="header animate__animated"> <!-- Here we used "animate__animated" class for animating headder during scroll -->
         <div class="navbar navbar-expand-lg">
             <div class="container">
                 <div class="navbar-content">
+
+                    <!-- Brand Starts -->
                     <div class="navbar-content__item">
                         <a href="index.html">
                             <img src="assets/img/brand.png" alt="Brand">
                         </a>
                     </div>
-                    <div class="offcanvas offcanvas-end navbar-content__item" tabindex=" -1" id="offcanvasNavbar"
+                    <!-- Brand Ends -->
+
+                    <!-- Bootstrap Off Canvas Starts -->
+                    <div class="offcanvas offcanvas-start navbar-content__item" tabindex=" -1" id="offcanvasNavbar"
                         aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
+                            <div class="offcanvas-header__brand">
+                                <a href="index.html">
+                                    <img src="assets/img/brand.png" alt="Brand">
+                                </a>
+                            </div>
+                            <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
+                            <button type="button" data-bs-dismiss="offcanvas"
+                                aria-label="Close"><i class="las la-times"></i></button>
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav">
@@ -60,8 +78,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="#">
                                         Sale
                                     </a>
                                     <ul class="dropdown-menu">
@@ -82,13 +99,21 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- Bootstrap Off Canvas Ends -->
+
+                    <!-- Navbar Action Starts -->
                     <div class="navbar-content__item">
                         <ul class="navbar-content__item--action">
-                            <li><i class="las la-search"></i></li>
+                            <li class="rotate-y-160"><i class="las la-search"></i></li>
                             <li><a href="#"><i class="las la-user"></i></a></li>
-                            <li><i class="las la-shopping-cart"></i></li>
+                            <li>
+                                <i class="las la-shopping-cart"></i>
+                                <span class="navbar-action__badge">2</span>
+                            </li>
+                            <li class="d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><i class="las la-bars"></i></li> <!-- Open Off Canvas -->
                         </ul>
                     </div>
+                    <!-- Navbar Action Ends -->
                 </div>
             </div>
         </div>
@@ -186,10 +211,11 @@
             </div>
         </div> -->
     </header>
-    <!--***********************************
-                Hero
-    **********************************-->
+    <!-- Header Ends -->
 
+    <!--***********************
+        Hero Starts
+    ************************-->
     <section class="owl-carousel owl-theme hero-carousel">
         <div class="item">
             <div class="hero-section" style="background-image:url(assets/img/dslr.png) ;">
@@ -247,6 +273,8 @@
             </div>
         </div>
     </section>
+    <!-- Hero Ends -->
+
     <!--***********************************
             Latest Hot Deals
     **********************************-->

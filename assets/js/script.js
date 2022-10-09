@@ -2,22 +2,58 @@ jQuery(function ($) {
 
     'use strict';
 
+    // Navbar scroll
+    $(window).scroll(function () {
+        let position = $(this).scrollTop();
+        if (position >= 10) {
+            $(".header").addClass("header-sticky animate__slideInDown");
+        } else {
+            $(".header").removeClass("header-sticky animate__slideInDown");
+        }
+    });
+    
+    // Navbar offcanvas dropdown toggle starts
+    const navbarOffCanvas = document.querySelector(".offcanvas.navbar-content__item");
+    if (navbarOffCanvas) {
+        navbarOffCanvas.addEventListener('show.bs.offcanvas', event => {
+            $(".offcanvas.navbar-content__item .offcanvas-body .nav-item a").on("click", function () {
+                var $this = $(this);
+                if ($this.hasClass("dropdown-toggle")) {
+                    $this.toggleClass("icon-rotate");
+                    $this.next().slideToggle();
+                    if ($this.parent().siblings().children().hasClass("dropdown-toggle")) {
+                        $this.parent().siblings().children().removeClass("icon-rotate");
+                        $this.parent().siblings().children().next().slideUp();
+                    }
+                }
+            });
+        })
+
+        // When navbar offcanvas gets hide
+        navbarOffCanvas.addEventListener('hide.bs.offcanvas', event => {
+            $(".nav-item a").removeClass("icon-rotate");
+            $(".nav-item a").next().slideUp();
+        })
+    }
+    // Navbar offcanvas dropdown toggle ends
+
+
     // hero Carousel
 
     $('.hero-carousel').owlCarousel({
-        loop:true,
-        margin:0,
-        nav:false,
+        loop: true,
+        margin: 0,
+        nav: false,
         dots: true,
-        responsive:{
-            0:{
-                items:1
+        responsive: {
+            0: {
+                items: 1
             },
-            600:{
-                items:1
+            600: {
+                items: 1
             },
-            1000:{
-                items:1
+            1000: {
+                items: 1
             }
         }
     })
@@ -32,7 +68,7 @@ jQuery(function ($) {
             0: {
                 items: 1
             },
-            300:{
+            300: {
                 items: 2
             },
             600: {
@@ -44,38 +80,38 @@ jQuery(function ($) {
         }
     })
 
-// New Product Carousel starts
+    // New Product Carousel starts
 
-let newCarousel = document.querySelectorAll(".new-product__carousel");
-for (let i = 0; i < newCarousel.length; i++) {
-    console.log($("#new-carousel-", i + 1));
-    $(`#new-carousel-${i + 1}`).owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        dots: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 4
+    let newCarousel = document.querySelectorAll(".new-product__carousel");
+    for (let i = 0; i < newCarousel.length; i++) {
+        console.log($("#new-carousel-", i + 1));
+        $(`#new-carousel-${i + 1}`).owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
             }
-        }
-    })
-}
+        })
+    }
 
-// Selection tab
-$(".new-product__section .section-header__action--tab li").on("click", function () {
-    $(this).siblings().removeClass("active");
-    $(this).addClass("active");
-    let idAttribute = $(this).attr("data-id");
-    console.log(idAttribute);
-    $(".new-product__area").find(`[data-carousel='${idAttribute}']`).addClass("active").siblings().removeClass("active");
-});
+    // Selection tab
+    $(".new-product__section .section-header__action--tab li").on("click", function () {
+        $(this).siblings().removeClass("active");
+        $(this).addClass("active");
+        let idAttribute = $(this).attr("data-id");
+        console.log(idAttribute);
+        $(".new-product__area").find(`[data-carousel='${idAttribute}']`).addClass("active").siblings().removeClass("active");
+    });
 
 });
 // Trending Offers Carousel starts

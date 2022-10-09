@@ -1,6 +1,16 @@
 // Add variables here
 @use '../abstracts/variables' as *;
 
+button {
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    &:active, &:focus {
+        outline: 0;
+        border: 0;
+    }
+}
+
 // Button CSS
 .main-btn {
     padding: 0.9375em 1.875em;
