@@ -20,7 +20,7 @@
     <!-- Line Awesome Icon CSS -->
     <link rel="stylesheet" href="./assets/icons8/css/line-awesome.min.css">
 
-     <!-- Animate CSS -->
+    <!-- Animate CSS -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
@@ -36,7 +36,8 @@
     <!--***********************
         Header Starts
     ************************-->
-    <header class="header animate__animated"> <!-- Here we used "animate__animated" class for animating headder during scroll -->
+    <header class="header animate__animated">
+        <!-- Here we used "animate__animated" class for animating headder during scroll -->
         <div class="navbar navbar-expand-lg">
             <div class="container">
                 <div class="navbar-content">
@@ -58,9 +59,8 @@
                                     <img src="assets/img/brand.png" alt="Brand">
                                 </a>
                             </div>
-                            <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5> -->
-                            <button type="button" data-bs-dismiss="offcanvas"
-                                aria-label="Close"><i class="las la-times"></i></button>
+                            <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                                    class="las la-times"></i></button>
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav">
@@ -97,29 +97,37 @@
                                     <a class="nav-link" href="#">Contact Us</a>
                                 </li>
                             </ul>
+                            <div class="offcanvas-header__info d-lg-none bg-gray">
+                                <div class="offcanvas-header__info--item">Refer a Friend. Get 20% Off</div>
+                                <div class="offcanvas-header__info--item">Subscribe Today Get $10 Off</div>
+                                <div class="offcanvas-header__info--item ">Free Shipping +30 Day Returns</div>
+                            </div>
                         </div>
                     </div>
                     <!-- Bootstrap Off Canvas Ends -->
                     <!-- Navbar Action Starts -->
                     <div class="navbar-content__item">
                         <ul class="navbar-content__item--action">
-                            <li >
-                               <i class="dropdown-toggle  rotate-y-160 las la-search"  id="search1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                  </i>                              
-                         <div class="dropdown-menu " aria-labelledby="search1" data-bs-popper="none">
-                            <form>
-                                <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="Search">
-                                     <button><i class=" rotate-y-160 las la-search"></i></button>
-                                    </div>
-                                </form>
-                            </li>                       
+                            <li>
+                                <i class="dropdown-toggle  rotate-y-160 las la-search" id="search1"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                </i>
+                                <div class="dropdown-menu " aria-labelledby="search1" data-bs-popper="none">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Search">
+                                            <button><i class=" rotate-y-160 las la-search"></i></button>
+                                        </div>
+                                    </form>
+                            </li>
                             <li><a href="#"><i class="las la-user"></i></a></li>
                             <li>
                                 <i class="las la-shopping-cart"></i>
                                 <span class="navbar-action__badge">2</span>
                             </li>
-                            <li class="d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><i class="las la-bars"></i></li> <!-- Open Off Canvas -->
+                            <li class="d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                                aria-controls="offcanvasNavbar"><i class="las la-bars"></i></li>
+                            <!-- Open Off Canvas -->
                         </ul>
                     </div>
                     <!-- Navbar Action Ends -->
@@ -225,58 +233,69 @@
     <!--***********************
         Hero Starts
     ************************-->
-    <section class="owl-carousel owl-theme hero-carousel">
-        <div class="item">
-            <div class="hero-section" style="background-image:url(assets/img/dslr.png) ;">
-                <div class="container">
-                    <div class="hero-section__content">
-                        <h4>Another World of Camera, Lens and Accessories.</h4>
-                        <h1>The Best Camera For Serious Photographers</h1>
-                        <button class="main-btn main-btn__border">Discover Now</button>
-                    </div>
+    <section class="hero-section">
+        <div class="hero-info bg-gray">
+            <div class="container">
+                <div class="hero-info__content">
+                    <div class="hero-info__content--item d-none d-lg-block">Refer a Friend. Get 20% Off</div>
+                    <div class="hero-info__content--item d-none d-lg-block">Subscribe Today Get $10 Off</div>
+                    <div class="hero-info__content--item d-none d-lg-block">Free Shipping +30 Day Returns</div>
                 </div>
             </div>
         </div>
-        <div class="item">
-            <div class="hero-section" style="background-image:url(assets/img/dslr.png) ;">
-                <div class="container">
-                    <div class="hero-section__content">
-                        <h4>Another World of Camera, Lens and Accessories.</h4>
-                        <h1>The Best Camera For Serious Photographers</h1>
-                        <button class="main-btn main-btn__border">Discover Now</button>
+        <div class="owl-carousel owl-theme hero-carousel">
+            <div class="item">
+                <div class="hero-section" style="background-image:url(assets/img/dslr.png) ;">
+                    <div class="container">
+                        <div class="hero-section__content">
+                            <h4>Another World of Camera, Lens and Accessories.</h4>
+                            <h1>The Best Camera For Serious Photographers</h1>
+                            <button class="main-btn main-btn__border">Discover Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="hero-section" style="background-image:url(assets/img/dslr.png) ;">
-                <div class="container">
-                    <div class="hero-section__content">
-                        <h4>Another World of Camera, Lens and Accessories.</h4>
-                        <h1>The Best Camera For Serious Photographers</h1>
-                        <button class="main-btn main-btn__border">Discover Now</button>
+            <div class="item">
+                <div class="hero-section" style="background-image:url(assets/img/dslr.png) ;">
+                    <div class="container">
+                        <div class="hero-section__content">
+                            <h4>Another World of Camera, Lens and Accessories.</h4>
+                            <h1>The Best Camera For Serious Photographers</h1>
+                            <button class="main-btn main-btn__border">Discover Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="hero-section" style="background-image:url(assets/img/dslr.png) ;">
-                <div class="container">
-                    <div class="hero-section__content">
-                        <h4>Another World of Camera, Lens and Accessories.</h4>
-                        <h1>The Best Camera For Serious Photographers</h1>
-                        <button class="main-btn main-btn__border">Discover Now</button>
+            <div class="item">
+                <div class="hero-section" style="background-image:url(assets/img/dslr.png) ;">
+                    <div class="container">
+                        <div class="hero-section__content">
+                            <h4>Another World of Camera, Lens and Accessories.</h4>
+                            <h1>The Best Camera For Serious Photographers</h1>
+                            <button class="main-btn main-btn__border">Discover Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="item">
-            <div class="hero-section" style="background-image:url(assets/img/dslr.png) ;">
-                <div class="container">
-                    <div class="hero-section__content">
-                        <h4>Another World of Camera, Lens and Accessories.</h4>
-                        <h1>The Best Camera For Serious Photographers</h1>
-                        <button class="main-btn main-btn__border">Discover Now</button>
+            <div class="item">
+                <div class="hero-section" style="background-image:url(assets/img/dslr.png) ;">
+                    <div class="container">
+                        <div class="hero-section__content">
+                            <h4>Another World of Camera, Lens and Accessories.</h4>
+                            <h1>The Best Camera For Serious Photographers</h1>
+                            <button class="main-btn main-btn__border">Discover Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="hero-section" style="background-image:url(assets/img/dslr.png) ;">
+                    <div class="container">
+                        <div class="hero-section__content">
+                            <h4>Another World of Camera, Lens and Accessories.</h4>
+                            <h1>The Best Camera For Serious Photographers</h1>
+                            <button class="main-btn main-btn__border">Discover Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -618,6 +637,8 @@
     <!--===============================
         Trending Offers Section
     ================================-->
+
+    <!-- <div class="className-childClassName__grandChildClassName--grandGrandChildClassName"></div> -->
 
     <section class="featured-category__section bgWhite pb-70 pt-100">
         <div class="container">

@@ -3,7 +3,7 @@
 }
 
 .bg-gray {
-  background-color: #f8f8f8;
+  background-color: #F5F5F5;
 }
 
 .t-clr-primary {
@@ -61,16 +61,5 @@
   }
   .section-header h2 {
     font-size: 1.5em;
-  }
-  .hero-section {
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-  .hero-section__content h4 {
-    font-size: 1.2em;
-  }
-  .hero-section__content h1 {
-    font-size: 2em;
-    margin-bottom: 0.65em;
   }
 }/*# sourceMappingURL=responsive.css.map */
