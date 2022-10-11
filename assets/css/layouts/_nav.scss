@@ -123,6 +123,41 @@
             border-radius: 10px;
         }
     }
+    .navbar-content__item{
+        &--action{
+            .dropdown-toggle::after{
+                visibility: hidden;
+            }
+            .dropdown-menu{
+                background-color: #ffffff;
+                width: 315px;
+                padding: 13px;
+                border-radius: 3px;
+                right: 0;
+                left: auto!important;
+                margin: 33px;
+
+            }
+            .form-group{
+                display: flex;
+                background-color: $primaryColor;
+                .form-control{
+                    border: none;
+                    color: #ffffff;
+                    background-color: #000;
+                    
+                }
+                button{
+                    font-size: 20px;
+                    color:#ffffff!important ;
+                    padding: 0;
+                    background-color: transparent;
+                    border: 0;
+                    padding: 10px;
+                   }
+            }
+        }
+    }
 }
 
 // Media query
@@ -147,9 +182,29 @@
                 .navbar {
                     &-nav {
                         .nav-item {
+                            width: 105%;
+                            border-top: 1px solid rgb(220, 218, 218);
+                            padding:0.8em ;
                             &:not(:last-child) {
-                                margin-bottom: 15px;
+                                margin-bottom: 5px;
+
                             }
+                            &.dropdown {
+
+                                .dropdown-menu {
+                                    margin-top: 7px;
+                                    margin-bottom: -7px;                                   
+                                    li { 
+                                                  
+                                        a {
+                                           width: 105%;
+                                           padding: 10px ;
+                                           padding-left: 18px;
+                                           border-top: 1px solid #e3e3e3;
+                                          }
+                                        }
+                                    }
+                                }          
                             a {
                                 padding: 0;
                                 position: relative;
