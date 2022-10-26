@@ -7,11 +7,11 @@
 // Hero
 .hero {
     &-section {
-        height: calc(100vh - var(--nav-height));
+       // height: calc(100vh - var(--nav-height));
         // padding-top: 100px;
         // padding-bottom: 100px;
         // background-repeat: no-repeat;
-        // background-size: cover;
+         background-size: cover;
         // width: 100%;
 
         &__content {
@@ -19,6 +19,8 @@
             max-width: 960px;
             margin-left: auto;
             margin-right: auto;
+            padding-top: 100px;
+            padding-bottom: 100px;
 
             h4 {
                 color: #CDCDCD !important;
@@ -30,7 +32,7 @@
 
             h1 {
                 color: #ffffff;
-                font-size: 5em;
+                font-size:4.5em;
                 margin-bottom: 0.475em;
             }
 
@@ -212,7 +214,7 @@
 
             @media only screen and (max-width: 991px) {
                 .container {
-                    max-width: 100%;
+                   // max-width: 100%;
                     padding-left: 0;
                     padding-right: 0;
                 }
@@ -614,13 +616,15 @@
 .newsletter-section {
     background: linear-gradient(90.37deg, rgb(222, 223, 225) 51.53%, rgba(222, 223, 225, 0) 56.05%) #DEDFE1;
     &__content {
-        padding-left: 70px;
-        padding-right: 220px;
+        padding-left: 54px;
+        padding-right: 137px;
         h2 {
             font-size: 2.25em;
         }
         p {
             color: #6a6a6a;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
         .custom-input {
             &__append {
@@ -765,9 +769,8 @@
     &__button {
         font-size: 14px;
         font-weight: 400;
-        color: $primaryColor;
-        border: none;
-        padding: 3px 5px;
+        color: $grayColor;
+        border-bottom: 1px solid;
     }
 }
 

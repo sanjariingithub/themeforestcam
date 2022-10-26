@@ -24,5 +24,8 @@ button {
         border: 1px solid $secondaryColor;
         background-color: transparent;
         color: $secondaryColor;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        transform: translate(10px,-20px);
     }
 }
