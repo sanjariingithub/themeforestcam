@@ -7,30 +7,30 @@
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
     background: $secondaryColor;
 }
-.owl-theme .owl-dots {
-    position: absolute;
-    bottom:6px;
-}
+// .owl-theme .owl-dots {
+//     position: absolute;
+//     bottom:6px;
+// }
 @include breakpoint-max(991px) {
-    .owl-theme .owl-dots {
-        left: 43%;
-    }
+    // .owl-theme .owl-dots {
+    //     left: 43%;
+    // }
     }
 @include breakpoint-min(992px) {
-.owl-theme .owl-dots {
-    left: 45%;
-}
+// .owl-theme .owl-dots {
+//     left: 45%;
+// }
 }
 
 @include breakpoint-max(767px) {
-    .owl-theme .owl-dots {
-        left: 39%;
-    }
+    // .owl-theme .owl-dots {
+    //     left: 39%;
+    // }
 }
 @include breakpoint-max(467px) {
-    .owl-theme .owl-dots {
-        left: 35%;
-    }
+    // .owl-theme .owl-dots {
+    //     left: 35%;
+    // }
 }
 
 .owl {
@@ -59,9 +59,9 @@
         }
     }
 }
-.owl-theme .owl-nav.disabled+.owl-dots {
-    margin-top: 0;
-}
+// .owl-theme .owl-nav.disabled+.owl-dots {
+//     margin-top: 0;
+// }
 
 // Responsive
 @include breakpoint-max(1199px) {
@@ -130,98 +130,49 @@
 }
 
 //new-product
-.new-product__section{
-    @include breakpoint-min(1100px) {
-        .owl {
-            &-theme {
-                .owl-nav {
-                    .owl {
-                        &-prev {
-                            left: -23px;
-                            top: 121px;
-                        }
-                        &-next {
-                            right: -23px;
-                            top: 121px;
-                        }
-                    }
-                }
-            }
-        }
-    }
+// .new-product__section{
+//     @include breakpoint-min(1100px) {
+//         .owl {
+//             &-theme {
+//                 .owl-nav {
+//                     .owl {
+//                         &-prev {
+//                             left: -23px;
+//                             top: 121px;
+//                         }
+//                         &-next {
+//                             right: -23px;
+//                             top: 121px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
     
 
-}
-
-.new-product__section{
-    @include breakpoint-max(1100px) {
-        .owl {
-            &-theme {
-                .owl-nav {
-                    .owl {
-                        &-prev {
-                            left: -23px;
-                            top: 121px;
-                        }
-                        &-next {
-                            right: -23px;
-                            top: 121px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-
-}
-
-
+// }
 //new-product
-//new-product
-.featured-product__section{
-    @include breakpoint-min(1100px) {
-        .owl {
-            &-theme {
-                .owl-nav {
-                    .owl {
-                        &-prev {
-                            left: -23px;
-                            top: 121px;
-                        }
-                        &-next {
-                            right: -23px;
-                            top: 121px;
-                        }
-                    }
-                }
-            }
-        }
-    }
+// .featured-product__section{
+//     @include breakpoint-min(1100px) {
+//         .owl {
+//             &-theme {
+//                 .owl-nav {
+//                     .owl {
+//                         &-prev {
+//                             left: -23px;
+//                             top: 121px;
+//                         }
+//                         &-next {
+//                             right: -23px;
+//                             top: 121px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
     
 
-}
-
-.featured-product__section{
-    @include breakpoint-max(1100px) {
-        .owl {
-            &-theme {
-                .owl-nav {
-                    .owl {
-                        &-prev {
-                            left: -23px;
-                            top: 121px;
-                        }
-                        &-next {
-                            right: -23px;
-                            top: 121px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    
-
-}
+// }
 

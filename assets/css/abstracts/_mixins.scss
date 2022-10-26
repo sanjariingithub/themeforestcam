@@ -4,6 +4,12 @@
     }
 }
 
+@mixin breakpoint-and-orientation-min($bp) {
+    @media (min-width: $bp) and (orientation: landscape) {
+        @content;
+    }
+}
+
 @mixin breakpoint-max($bp) {
     @media (max-width: $bp) {
         @content;
