@@ -10,7 +10,7 @@
         // padding-top: 100px;
         // padding-bottom: 100px;
         // background-repeat: no-repeat;
-        //  background-size: cover;
+         // background-size: cover;
         // width: 100%;
 
         &__content {
@@ -24,7 +24,6 @@
             h4 {
                 color: #CDCDCD !important;
                 font-size: 1.5em;
-                font-family: 'Inter Regular';
                 margin-bottom: 0.5em;
                 line-height: 1.4;
             }
@@ -551,39 +550,12 @@
         &--section {
             display: flex;
             align-items: center;
-            border: 1px solid #E3E3E3;
+            border: 1px solid $borderColor;
             border-radius: 8px;
             background-color: #ffffff;
-            padding: 76px 85px 30px 55px;
-            &--right {
-                position: relative;
-                &:before {
-                    content: "";
-                    width: 200px;
-                    height: 200px;
-                    margin: auto;
-                    border: 100px solid #f08c8c;
-                    border-radius: 50%;
-                }
-                .trending__img {
-                    position: absolute;
-                    width: 120px;
-                    object-fit: contain;
-                } 
-            }
-            &--smallbox {
-                padding: 5px 7px;
-                font-size: 10px;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                position: absolute;
-                top: 65px;
-                color: #fffcfc;
-                background-color: #f08c8c;
-                left: 432px;
-                text-align: center;
-            }
+            // padding: 54px 48px;
+            padding: 20px 25px 20px 45px;
+           
             &--left {
                 // padding-top: 90px;
                 // padding-bottom: 90px;
@@ -617,6 +589,11 @@
                     font-size: 16px;
                 }
             }
+            &--right {
+                .trending__img {
+                    object-fit: contain;
+                }
+            }
         }
     }
 }
@@ -628,7 +605,7 @@
         padding-left: 54px;
         padding-right: 137px;
         h2 {
-            font-size: 2.25em;
+            font-size: 1.95em;
         }
         p {
             color: #6a6a6a;
@@ -643,6 +620,10 @@
             }
             &__field {
                 background-color: #ffffff;
+                padding: 10px;
+            }
+            &__checkbox{
+               padding-top: 10px;
             }
         }
     }
@@ -740,6 +721,8 @@
 }
 
 //----------------Article Section----------------\\
+
+
 .article--section {
     &__img {
         padding-bottom: 15px;
@@ -857,11 +840,11 @@
 // Responsive style starts
 
 @include breakpoint-max(991px) {
-    .hero {
-        &-section {
+    //.hero {
+        //&-section {
             // height: 700px;
-        }
-    }
+       // }
+  //  }
     .footer__section {
         .row {
             border-bottom: 1px solid $grayColor;
@@ -917,6 +900,23 @@
 //         }
 //     }
 // }
+@include breakpoint-max(991px){
+    .hero-section__content{
+             h1{
+                font-size: 3em;
+             }
+             h4{
+                font-size: 1em;
+             }
+    }
+}
+@include breakpoint-max(767px){
+    .hero-section__content{
+             h1{
+                font-size: 2.5em;
+             }
+    }
+}
 
 @include breakpoint-and-orientation-min(992px) {
     .hero {
@@ -948,10 +948,69 @@
         }
     }
 }
-@include breakpoint-min(1600px) {
+@include breakpoint-min(1600px){
     .hero {
         &-section {
             height: 735px;
         }
     }
+}
+//trending section responsive
+@include breakpoint-max(991px){
+    .trending {
+        &_offers {
+            &--section {
+                display: flex;
+                flex-direction: column;           
+               
+                &--right {
+                    .trending__img {
+                        object-fit: contain;
+                        max-width: 50%!important;
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+
+}
+//responsiveness for newsletter section
+@include breakpoint-max(991px){
+    .newsletter-section {
+        &__content {
+            padding-left: 20px;
+            padding-right: 0px;
+            h2 {
+                font-size: 2em;
+            }
+            .custom-input {
+                &__append {
+                    padding: 18px 35px;
+                }
+            }
+        }
+    &__image {
+        visibility: hidden;
+        max-width: 0;
+    }
+    }
+
+}
+@include breakpoint-max(767px){
+    .newsletter-section {
+        &__content {
+           
+            padding-right: 0px;
+            h2 {
+                font-size: 2em;
+            }
+            .custom-input {
+                &__append {
+                    padding: 17px 10px;
+                }
+            }
+        }
+
+}
 }

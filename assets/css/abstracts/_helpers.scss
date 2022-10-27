@@ -1,4 +1,5 @@
 @use './variables' as *;
+@use '../abstracts/mixins' as *;
 
 // Add styles here
 .bg-gray {
@@ -37,3 +38,32 @@
 .rotate-y-160 {
     transform: rotateY(160deg);
 }
+// For max-width: 767px
+@include breakpoint-max(767px) {
+    body {
+        font-size: 0.9375em;
+    }
+    .pt-100 {
+        padding-top: 50px;
+    }
+    
+    .pb-100 {
+        padding-bottom: 50px;
+    }
+
+    .pb-70 {
+        padding-bottom: 20px;
+    }
+
+    .ptb-100 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .section-header {
+        h2 {
+            font-size: 1.5em;
+        }
+    }
+    
+}
+
