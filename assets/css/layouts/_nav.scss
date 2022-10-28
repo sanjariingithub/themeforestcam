@@ -179,10 +179,14 @@
 
 // Media query
 @include breakpoint-max(991px) {
+    .navbar-content__item{
+        img{
+            max-width: 90%;
+        }
+    }
     .offcanvas.navbar-content__item {
         max-width: 330px;
         width: 100%;
-
         .offcanvas {
             &-header {
                 padding: 15px 20px;

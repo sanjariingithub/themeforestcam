@@ -1,5 +1,12 @@
+@use '../abstracts/mixins' as *;
+
+
 :root {
     --nav-height: 85px;
+    @include breakpoint-max(767){
+        --nav-height: 55px;
+
+    }
 }
 
 $primaryColor: #010101;
