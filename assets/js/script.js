@@ -61,7 +61,7 @@ jQuery(function ($) {
 
     $('.hot-deals__carousel').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 15,
         nav: true,
         dots: false,
         responsive: {
@@ -74,7 +74,7 @@ jQuery(function ($) {
             600: {
                 items: 2
             },
-            1000: {
+            1200: {
                 items: 3
             }
         }
