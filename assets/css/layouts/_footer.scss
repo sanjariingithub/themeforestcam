@@ -1,0 +1,99 @@
+// Add variables here
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// Add styles here
+.footer {
+    &-customer {
+        &__info {
+            padding-top: 45px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #262626;
+            &--item {
+                flex: 0 0 auto;
+                width: 33.33%;
+                display: flex;
+                align-items: center;
+                margin-bottom: 25px;
+                figure {
+                    flex: 0 0 auto;
+                    width: 66px;
+                }
+            }
+            &--content {
+                padding-left: 40px;
+                h3 {
+                    font-size: 1.5em;
+                    color: $inverseColor;
+                    margin-bottom: 10px;
+                }
+                p {
+                    color: #6A6A6A;
+                }
+            }
+        }
+    }
+    &-info {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        &__item {
+            h3 {
+                color: $inverseColor;
+                font-size: 1.25em;
+            }
+        }
+    }
+}
+
+// RESPONSIVE STARTS
+@include breakpoint-max(1199px) {
+    .footer {
+        &-customer {
+            &__info {
+                &--item {
+                    figure {
+                        width: 50px;
+                    }
+                }
+                &--content {
+                    padding-left: 30px;
+                    h3 {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+    }
+}
+@include breakpoint-max(991px) {
+    .footer {
+        &-customer {
+            &__info {
+                &--item {
+                    width: 50%;
+                }
+                &--content {
+                    h3 {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+    }
+}
+@include breakpoint-max(575px) {
+    .footer {
+        &-customer {
+            &__info {
+                &--item {
+                    width: 100%;
+                }
+                &--content {
+                    h3 {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+    }
+}

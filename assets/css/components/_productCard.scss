@@ -47,12 +47,12 @@
             right: 15px;
         }
     
-        &--red {
+        &--label1 {
             background-color: $secondaryColor;
         }
     
-        &--blue {
-            background-color: $gray;
+        &--label2 {
+            background-color: $labelColor1;
         }
     
     }

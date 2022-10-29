@@ -6,6 +6,10 @@
     background-color: #F5F5F5;
 }
 
+.bg-primary {
+    background-color: $primaryColor !important;
+}
+
 .t-clr-primary {
     color: $primaryColor !important;
 }
