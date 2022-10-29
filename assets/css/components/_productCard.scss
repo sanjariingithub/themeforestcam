@@ -21,7 +21,6 @@
                 margin-bottom: 0;
 
                 img {
-                    height: 140px;
                     display: block;
                     object-fit: contain;
                 }
@@ -94,7 +93,8 @@
             border: 1px solid #E3E3E3;
             border-radius: 8px;
             background-color: transparent;
-            padding: 60px 25px;
+           // padding: 60px 25px;
+           padding: 40px 20px;
             text-align: center;
             margin-bottom: 1em;
         }
@@ -116,4 +116,21 @@
             }
         }
     }
+}
+@include breakpoint-max(991px)
+{
+    .featured-category__section {
+        .product-card {
+            &__box {
+               padding: 45px 8px;
+            }
+    
+            &__content {
+                &--title {
+                    color: $primaryColor !important;
+                }
+            }
+        }
+    }
+
 }
