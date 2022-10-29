@@ -18,8 +18,8 @@
             max-width: 960px;
             margin-left: auto;
             margin-right: auto;
-            padding-top: 70px;
-            padding-bottom: 96px;
+            padding-top: 85px;
+            padding-bottom: 111px;
 
             h4 {
                 color: #CDCDCD !important;
@@ -71,7 +71,17 @@
     }
 }
 
-// Hot deals section
+//Hot deals section
+.hot-deals{
+    &__section{
+        .time-card{
+     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+        }
+    }
+}
 
 
 /*************** hot deals carousel section ***************/
@@ -790,7 +800,7 @@
 @include breakpoint-max(991px) {
     .hero-section__content {
         h1 {
-            font-size: 3em;
+            font-size: 4em;
         }
 
         h4 {
@@ -955,10 +965,11 @@
             .owl-nav {
                 position: absolute;
                 top: 34%;
-                left: 0;
+                left: 3px;
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
+                
     
                 [class*=owl] {
                     position: unset;
