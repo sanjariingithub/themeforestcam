@@ -520,7 +520,7 @@
             &--left {
                 // padding-top: 90px;
                 // padding-bottom: 90px;
-                max-width: 250px;
+                //max-width: 250px;
                 margin-right: 15px;
 
                 h3 {
@@ -568,7 +568,7 @@
         padding-right: 137px;
 
         h2 {
-            font-size: 1.95em;
+            font-size: 2em;
         }
 
         p {
@@ -579,7 +579,9 @@
 
         .custom-input {
             &__append {
-                padding: 18px 35px;
+                //padding: 18px 35px;
+
+                padding: 12px 30px;
                 background-color: $secondaryColor;
                 color: #ffffff;
             }
@@ -596,7 +598,10 @@
     }
 
     &__image {
-        max-width: 440px;
+        img{
+            max-width: 98%;
+        }
+       // max-width: 440px;
     }
 
     // &__content {
@@ -689,14 +694,14 @@
     &__date {
         font-size: 14px;
         color: $secondaryColor;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
     }
 
     &__head {
         font-size: 18px;
         font-weight: 700;
         color: $primaryColor;
-        padding-bottom: 11px;
+        padding-bottom: 10px;
         line-height: 1.3;
         overflow: hidden;
         width: 100%;
@@ -733,6 +738,127 @@
 
 // Responsive style starts
 
+@include breakpoint-max(575px) {
+    
+    .section-header h2 {
+        font-size: 1.68em!important;
+    }
+    .newsletter-section{      
+        &__content{
+            padding-left: 0px;
+            padding-right: 0px;
+            h2{
+                font-size: 1.3em!important;
+            }
+    .custom-input {
+        &__group {
+            margin-bottom: 0 !important;
+        }
+        &__checkbox {
+            label {
+                font-size: 0.65em;
+                padding-left: 11px;
+                &:before {
+                    width: 8px;
+                    height: 8px;
+                    top: 4px;
+                }
+            }
+            input {
+                &:checked {
+                    &~label {
+                        &:before {
+                            font-size: 7px;
+                        }
+                    }
+                }
+            }
+        }
+        &__append {
+            padding: 9px 9px!important;
+            font-size: 0.75em !important;
+        }
+        &__field {
+            padding: 0px 10px !important;
+           font-size: 0.75em!important;
+        }
+    }
+}
+}
+}
+
+@include breakpoint-max(767px) {
+    .section-header h2 {
+        font-size: 1.85em;
+    }
+    .hero-section__content {
+        h1 {
+            font-size: 2.5em !important;
+        }
+    }
+    .trending {
+        &_offers {
+            &--section {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+
+                &--left {
+                    order: 2;
+                    margin-top: 12px;
+
+                    h3 {
+                        font-size: 2em;
+                    }
+
+                    p {
+                        font-size: 1em;
+                        line-height: 1.2;
+                        padding-bottom: 20px;
+                    }
+                }
+
+                &--right {
+                    .trending__img {
+                        order: 1;
+                        object-fit: contain;
+                        max-width: 60% !important;
+
+                    }
+                }
+            }
+        }
+    }
+    .newsletter-section {
+        &__content {
+            padding-right: 0px;
+
+            h2 {
+                font-size: 1.5em!important;
+            }
+                    .custom-input {
+                        &__field {
+                            padding: 7px 10px ;
+                                &::placeholder {
+                                font-size: 11px !important;
+                            }
+                        }
+                        &__append {
+                            padding: 9px 12px ;
+                            font-size: 10px !important;
+                        }
+                        &__group {
+                            margin-bottom: 2px !important;
+                        }
+                    }   
+                }
+
+               
+            }
+        }
+
+    
+
 @include breakpoint-max(991px) {
     .hero-section__content {
         h1 {
@@ -748,7 +874,7 @@
         &_offers {
             &--section {
                 &--left {
-                    max-width: 250px;
+                   // max-width: 250px;
 
                     h3 {
                         font-size: 2em;
@@ -775,8 +901,22 @@
             }
 
             .custom-input {
-                &__append {
-                    padding: 18px 35px;
+                &__field{
+                      padding: 6px 15px;
+                      &:first-child{
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                      }
+                      &::placeholder{
+                        font-size: 1.1em!important;
+                      }
+                }
+                &__append{
+                    padding: 14px 20px;
+                    font-size: 1.1em ;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+
                 }
             }
         }
@@ -836,63 +976,6 @@
     }
 }
 
-@include breakpoint-max(767px) {
-    .hero-section__content {
-        h1 {
-            font-size: 2.5em;
-        }
-    }
-    .trending {
-        &_offers {
-            &--section {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-
-                &--left {
-                    order: 2;
-                    margin-top: 12px;
-
-                    h3 {
-                        font-size: 2em;
-                    }
-
-                    p {
-                        font-size: 1em;
-                        line-height: 1.2;
-                        padding-bottom: 20px;
-                    }
-                }
-
-                &--right {
-                    .trending__img {
-                        order: 1;
-                        object-fit: contain;
-                        max-width: 60% !important;
-
-                    }
-                }
-            }
-        }
-    }
-    .newsletter-section {
-        &__content {
-
-            padding-right: 0px;
-
-            h2 {
-                font-size: 2em;
-            }
-
-            .custom-input {
-                &__append {
-                    padding: 17px 10px;
-                }
-            }
-        }
-
-    }
-}
 
 @include breakpoint-min(992px) {
 
@@ -970,3 +1053,4 @@
         }
     }
 }
+

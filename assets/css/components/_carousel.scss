@@ -47,6 +47,7 @@
         .owl-nav {
             margin: 0;
             [class*=owl-] {
+
                 margin: 0;
                 width: 55px;
                 height: 55px;
@@ -102,10 +103,10 @@
                 }
                 .owl {
                     &-prev {
-                        left: -22px;
+                        left: -3vw!important;
                     }
                     &-next {
-                        right: -22px;
+                        right: -3vw!important;
                     }
                 }
             }
@@ -118,10 +119,10 @@
             .owl-nav {
                 .owl {
                     &-prev {
-                        left: -23px;
+                        left: -3vw!important;
                     }
                     &-next {
-                        right: -23px;
+                        right: -3vw!important;
                     }
                 }
             }
