@@ -49,17 +49,25 @@
             [class*=owl-] {
 
                 margin: 0;
-                width: 55px;
-                height: 55px;
-                font-size: 30px !important;
+                width: 50px!important;
+                height: 50px!important;
                 color: $secondaryColor !important;
                 background-color: #ffffff !important;
                 border-radius: 50%;
                 box-shadow: 0px 0px 55px rgba(228, 228, 228, 0.55);
+                .la-angle-right:before {
+                    content: "\f105";
+                    font-size: 16px;
+                }
+                .la-angle-left:before {
+                    content: "\f104";
+                    font-size: 16px;
+                }
             }
         }
     }
 }
+
 // .owl-theme .owl-nav.disabled+.owl-dots {
 //     margin-top: 0;
 // }
@@ -119,10 +127,10 @@
             .owl-nav {
                 .owl {
                     &-prev {
-                        left: -3vw!important;
+                        left: -4vw!important;
                     }
                     &-next {
-                        right: -3vw!important;
+                        right: -4vw!important;
                     }
                 }
             }

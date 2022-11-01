@@ -42,6 +42,9 @@
 .rotate-y-160 {
     transform: rotateY(160deg);
 }
+.rotate-y-45 {
+    transform: rotate(-45deg);
+}
 // For max-width: 767px
 @include breakpoint-max(767px) {
     body {

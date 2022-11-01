@@ -64,12 +64,13 @@ jQuery(function ($) {
         margin: 15,
         nav: true,
         dots: false,
+        navText: ["<i class='las la-angle-left'></i>","<i class='las la-angle-right'></i>"],
         responsive: {
             0: {
                 items: 1
             },
             300: {
-                items: 2
+                items: 1
             },
             600: {
                 items: 2
@@ -90,6 +91,7 @@ jQuery(function ($) {
             margin: 10,
             nav: true,
             dots: false,
+            navText: ["<i class='las la-angle-left'></i>","<i class='las la-angle-right'></i>"],
             responsive: {
                 0: {
                     items: 1
@@ -120,15 +122,18 @@ $('.trending--offers__carousel').owlCarousel({
     margin: 10,
     nav: true,
     dots: false,
+    navText: ["<i class='las la-angle-left'></i>","<i class='las la-angle-right'></i>"],
     responsive: {
         0: {
             items: 1
         },
         600: {
-            items: 1
+            items: 1,
+            stagePadding: 100,
         },
         1000: {
             items: 2
+
         }
     }
 });
@@ -143,12 +148,13 @@ for (let i = 0; i < featuredCarousel.length; i++) {
         margin: 10,
         nav: true,
         dots: false,
+        navText: ["<i class='las la-angle-left'></i>","<i class='las la-angle-right'></i>"],
         responsive: {
             0: {
                 items: 1
             },
             600: {
-                items: 3
+                items: 3,
             },
             1000: {
                 items: 4
