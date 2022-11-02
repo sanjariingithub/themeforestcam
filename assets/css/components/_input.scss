@@ -1,5 +1,6 @@
 // Add variables here
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 input {
     border: 0;
@@ -40,6 +41,7 @@ input {
     &__field {
         -ms-flex: 1;
         flex: 1;
+        width: 100%;
         padding: 18px 18px;
         // background-color: #ffffff;
 
@@ -90,6 +92,37 @@ input {
                 border: 1px solid #373737;
                 line-height: 1;
                 font-size: 12px;
+            }
+        }
+    }
+}
+
+// Responsive
+@include breakpoint-max(991px) {
+    .custom-input {
+    
+        &__prepend {
+            padding: 15px 0 15px 15px;
+            font-size: 0.9em;
+        }
+    
+        &__append {
+            padding: 15px 15px 15px 0;
+            font-size: 0.9em;
+        }
+    
+        &__field {
+            padding: 15px 15px;
+            font-size: 0.9em;
+        }
+
+        &__checkbox {
+    
+            label {
+                font-size: 0.9em;
+                &:before {
+                    top: 2px;
+                }
             }
         }
     }

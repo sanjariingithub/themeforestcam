@@ -88,16 +88,16 @@ jQuery(function ($) {
         console.log($("#new-carousel-", i + 1));
         $(`#new-carousel-${i + 1}`).owlCarousel({
             loop: true,
-            margin: 10,
+            margin: 15,
             nav: true,
             dots: false,
             navText: ["<i class='las la-angle-left'></i>","<i class='las la-angle-right'></i>"],
             responsive: {
                 0: {
-                    items: 1
+                    items: 1.2
                 },
-                600: {
-                    items: 3
+                500: {
+                    items: 2
                 },
                 1000: {
                     items: 4
@@ -119,7 +119,7 @@ jQuery(function ($) {
 // Trending Offers Carousel starts
 $('.trending--offers__carousel').owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 15,
     nav: true,
     dots: false,
     navText: ["<i class='las la-angle-left'></i>","<i class='las la-angle-right'></i>"],
@@ -127,9 +127,8 @@ $('.trending--offers__carousel').owlCarousel({
         0: {
             items: 1
         },
-        600: {
-            items: 1,
-            stagePadding: 100,
+        768: {
+            items: 1.3,
         },
         1000: {
             items: 2
