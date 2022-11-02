@@ -94,9 +94,6 @@
                 padding-right: 26%;
 
                 .custom-input {
-                    &__field {
-                        // padding: 16px 15px;
-                    }
                     &__append {
                         // padding: 16px 15px 16px 0;
                         font-size: 1.2em;
@@ -131,17 +128,7 @@
 
 // RESPONSIVE STARTS
 
-// @include breakpoint-max(1399px) {
-//     .footer {    
-//         &-info {
-//             &__item {
-//                 .custom-input__field {
-//                     padding: 18px 9px;
-//                 }
-//             }
-//         }
-//     }
-// }
+
 @include breakpoint-max(1199px) {
     .footer {
         &-customer {

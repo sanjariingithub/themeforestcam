@@ -11,20 +11,13 @@
         padding: 60px 25px;
         text-align: center;
         margin-bottom: 1em;
+        margin-right: 5px;
+        margin-left: 5px;
     }
 
     &__single {
         .product-card__box {
-            padding: 40px 25px;
-
-            figure {
-                margin-bottom: 0;
-
-                img {
-                    display: block;
-                    object-fit: contain;
-                }
-            }
+            padding: 40px 25px;         
         }
     }
 
@@ -101,6 +94,8 @@
 
         &__content {
             &--title {
+                font-size: 1.127em;
+                font-weight: 700;
                 color: $primaryColor !important;
             }
         }

@@ -67,10 +67,10 @@ jQuery(function ($) {
         navText: ["<i class='las la-angle-left'></i>","<i class='las la-angle-right'></i>"],
         responsive: {
             0: {
-                items: 1
+                items: 1.2
             },
             300: {
-                items: 1
+                items: 1.2
             },
             600: {
                 items: 2
@@ -150,10 +150,10 @@ for (let i = 0; i < featuredCarousel.length; i++) {
         navText: ["<i class='las la-angle-left'></i>","<i class='las la-angle-right'></i>"],
         responsive: {
             0: {
-                items: 1
+                items: 1.2
             },
             600: {
-                items: 3,
+                items: 2,
             },
             1000: {
                 items: 4

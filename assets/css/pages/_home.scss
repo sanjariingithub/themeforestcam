@@ -84,32 +84,22 @@
 }
 
 
-/*************** hot deals carousel section ***************/
-
-
-//----------------Hot deals section----------------\\
-
-// .hot-deals__carousel.owl-carousel .owl-nav button {
-//     font-size: 30px;
-//     color: $secondaryColor;
-//     margin-bottom: 0.5em;
-//     margin-top: 0.5em;
-// }
-
-
 //featured catagory part 
 .featured-category {
     &__grid {
         &--item {
             flex: 0 0 auto;
             width: 20%;
-
-            @include breakpoint-max (767px) {
+            @include breakpoint-max (991px) {
                 width: 33.33%;
             }
 
-            @include breakpoint-max (484px) {
+            @include breakpoint-max (767px) {
                 width: 50%;
+            }
+
+            @include breakpoint-max (484px) {
+                width: 100%;
             }
         }
     }
@@ -521,12 +511,12 @@
                 // padding-top: 90px;
                 // padding-bottom: 90px;
                 max-width: 250px;
-                margin-right: 15px;
+                padding-right: 15px;
 
                 h3 {
                     font-size: 1.50em;
                     font-weight: 700;
-                    line-height: 1.2;
+                    line-height: 1.4;
                     margin-bottom: 15px;
                     color: $primaryColor;
                 }
@@ -534,8 +524,7 @@
                 p {
                     // max-width: 200px;
                     font-size: 1em;
-                    font-weight: 400px;
-                    line-height: 1.2;
+                    line-height: 1.4;
                     margin-bottom: 20px;
                     color: $grayColor;
                 }
@@ -550,12 +539,6 @@
                 }
             }
 
-            &--right {
-                .trending__img {
-                    // object-fit: contain;
-                    // max-width: 250px;
-                }
-            }
         }
     }
 }
@@ -593,7 +576,7 @@
             }
 
             &__checkbox {
-                margin-top: 3px;
+                margin-top: 5px;
             }
         }
     }
@@ -611,7 +594,7 @@
 
 .article-section {
     &__img {
-        padding-bottom: 8px;
+        padding-bottom: 12px;
     }
 
     &__date {
@@ -668,7 +651,13 @@
             font-size: 1em;
         }
     }
-
+    .featured-category {
+        &__grid {
+            &--item {           
+                    width: 33.33%; 
+            }
+        }
+    }
     .trending {
         &_offers {
             &--section {
@@ -722,12 +711,20 @@
 
 @include breakpoint-max(767px) {
     .section-header h2 {
-        font-size: 1.85em;
+        font-size: 1.7em;
     }
 
     .hero-section__content {
         h1 {
-            font-size: 2.5em !important;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+    }
+    .featured-category {
+        &__grid {
+            &--item {           
+                    width: 50%; 
+            }
         }
     }
 
@@ -746,8 +743,9 @@
                     margin-right: 0;
 
                     h3 {
-                        font-size: 1.6em !important;
+                        font-size: 1.6em ;
                         margin-bottom: 12px;
+                        line-height: 1.2;
                     }
 
                     p {
@@ -775,7 +773,7 @@
             // padding-right: 0px;
 
             h2 {
-                font-size: 1.5em !important;
+                font-size: 1.5em ;
             }
 
             .custom-input {
@@ -793,7 +791,7 @@
                 }
 
                 &__group {
-                    margin-bottom: 2px !important;
+                    margin-bottom: 2px ;
                 }
             }
         }
@@ -808,14 +806,11 @@
 
     .newsletter-section {
         &__content {
-            // padding-left: 0px;
-            // padding-right: 0px;
-
             h2 {
                 font-size: 1.3em;
             }
 
-            .custom-input {
+           // .custom-input {
                 // &__group {
                 //     margin-bottom: 0 !important;
                 // }
@@ -852,9 +847,20 @@
                 //     padding: 0px 10px !important;
                 //     font-size: 0.75em !important;
                 // }
+           // }
+        }
+    }
+}
+@include breakpoint-max(480px){
+    .featured-category {
+        &__grid {
+            &--item {           
+                    width: 100%; 
             }
         }
     }
+
+
 }
 
 @include breakpoint-min(992px) {
