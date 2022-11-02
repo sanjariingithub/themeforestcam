@@ -88,7 +88,7 @@ jQuery(function ($) {
         console.log($("#new-carousel-", i + 1));
         $(`#new-carousel-${i + 1}`).owlCarousel({
             loop: true,
-            margin: 15,
+            margin: 24,
             nav: true,
             dots: false,
             navText: ["<i class='las la-angle-left'></i>","<i class='las la-angle-right'></i>"],
