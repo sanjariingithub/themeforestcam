@@ -1,5 +1,6 @@
 // Add variables here
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
 // Add styles here
 .section-header {
@@ -19,9 +20,10 @@
         margin-bottom: 7px;
         &--tab {
             li {
-                font-size: 14px;
+                font-size: 1em;
                 display: inline-block;
                 cursor: pointer;
+                margin-top: 2px;
                 &.active {
                     color: $secondaryColor;
                 }
@@ -40,4 +42,24 @@
             }
         }
     }
+}
+//responsive of section headers
+@include breakpoint-max(991px) {
+    .section-header h2 {
+        font-size: 1.7em;      
+    }
+
+}
+@include breakpoint-max(767px) {
+    .section-header{
+     h2 {
+        font-size: 1.4em;
+        margin-bottom: 10px;
+    }
+   
+}
+.section-header__action--tab li {
+    font-size: 0.9em;
+}
+
 }
