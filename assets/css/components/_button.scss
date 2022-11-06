@@ -1,6 +1,6 @@
 // Add variables here
 @use '../abstracts/variables' as *;
-
+@use '../abstracts/mixins' as *;
 button {
     padding: 0;
     background-color: transparent;
@@ -23,7 +23,14 @@ button {
         border: 1px solid $secondaryColor;
         background-color: transparent;
         color: $secondaryColor;
-        padding-top: 8px;
-        padding-bottom: 8px;
+        //padding-top: 8px;
+        //padding-bottom: 8px;
     }
+}
+
+@include breakpoint-max(767px){
+    .main-btn {
+        padding: 0.6375em 1.175em;
+    }
+
 }

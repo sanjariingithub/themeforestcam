@@ -143,18 +143,21 @@
                     line-height: 1.4;
                     margin-bottom: 20px;
                     color: $grayColor;
+                    letter-spacing: 0.085em;
                     
                 }
 
-                button {
-                    background-color: $secondaryColor;
-                    padding: 8px 20px;
-                    border-radius: 8px;
-                    border: none;
-                    color: white;
-                    font-size: 16px;
-                }
+               // button {
+                   // background-color: $secondaryColor;
+                   // border: none;
+                   // color: white;
+                   // font-size: 1em;
+              //  }
             }
+            &--right{
+                flex: 0 0 auto;
+                width: 335px;
+            } 
 
         }
     }
@@ -166,7 +169,7 @@
 
     &__content {
         padding-left: 55px;
-        padding-right: 200px;
+        padding-right: 235px;
 
         h2 {
             font-size: 2em;
@@ -176,7 +179,7 @@
 
         p {
             color: #6a6a6a;
-            margin-bottom: 30px;
+            margin-bottom: 22px;
         }
 
         .custom-input {
@@ -252,6 +255,7 @@
 
 // Responsive style starts
 @include breakpoint-max(1399px){
+
     .newsletter-section {  
         &__content {
             padding-left: 55px;
@@ -259,8 +263,23 @@
       
             }
         }
-    
+        .trending {
+            &-offers {
+                &__section {
+                    &--left{
+                        p{
+                            letter-spacing: 0.08em;
+                        }
+                    }
+                    &--right{
+                        width: 259px;
+                    } 
+
+                }
+
+            }
     }
+}
 
 
 
@@ -276,6 +295,9 @@
                     p{
                         line-height: 1.2;
                     }
+                }  
+                &--right{
+                    width: 196px;
                 }          
             }
         }
@@ -315,7 +337,7 @@
     .newsletter-section {
         &__content {
             padding-left: 0;
-            padding-right: 0px;
+            padding-right: 0;
 
             h2 {
                 font-size: 1.7em;
@@ -323,7 +345,7 @@
     
             }
             p{
-                margin-bottom: 20px;
+                margin-bottom: 16px;
             }
         
             .custom-input {
@@ -378,27 +400,30 @@
                 &--left {
                     order: 2;
                     max-width:100%;
-                    margin-top: 12px;
+                    margin-top: 10px;
                     padding-right: 0;
 
                     h3 {
 
                         line-height: 1.2;
+                        margin-bottom: 10px;
                     }
 
                     p {
                         line-height: 1.2;
                         font-size: 0.9em;
-                        margin-bottom: 22px;
+                        margin-bottom: 16px;
                     }
                 }
 
                 &--right {
+                    width: 255px;
+                    margin-bottom: 12px;
                     .trending__img {
                         order: 1;
                         object-fit: contain;
-                        max-width: 250px;
-                        margin-bottom: 12px;
+                       // max-width: 250px;
+                    //margin-bottom: 12px;
 
                     }
                 }

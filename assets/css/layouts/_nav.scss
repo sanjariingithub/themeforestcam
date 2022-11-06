@@ -18,6 +18,9 @@
     height: var(--nav-height);
     background-color: #ffffff;
     color: $primaryColor;
+    .offcanvas{
+        height: 100vh;
+    }
 
     &-content {
         display: flex;

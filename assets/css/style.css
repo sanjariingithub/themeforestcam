@@ -100,10 +100,13 @@ button:active, button:focus {
   border: 1px solid #FF0000;
   background-color: transparent;
   color: #FF0000;
-  padding-top: 8px;
-  padding-bottom: 8px;
 }
 
+@media (max-width: 767px) {
+  .main-btn {
+    padding: 0.6375em 1.175em;
+  }
+}
 .time-card {
   border: 1px solid #E3E3E3;
   border-radius: 8px;
@@ -504,6 +507,9 @@ input:focus, input:active {
   height: var(--nav-height);
   background-color: #ffffff;
   color: #010101;
+}
+.navbar .offcanvas {
+  height: 100vh;
 }
 .navbar-content {
   display: flex;
@@ -916,12 +922,12 @@ input:focus, input:active {
     font-size: 0.875em;
   }
   .footer-info {
-    padding-top: 35px;
+    padding-top: 30px;
     padding-bottom: 5px;
   }
   .footer-info__item h3 {
     font-size: 1.125em;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .footer-info__item p {
     font-size: 0.875em;
@@ -943,7 +949,7 @@ input:focus, input:active {
     font-size: 0.875em;
   }
   .footer-info__right {
-    padding-top: 15px;
+    padding-top: 5px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -1124,14 +1130,11 @@ p {
   line-height: 1.4;
   margin-bottom: 20px;
   color: #3A3A3A;
+  letter-spacing: 0.085em;
 }
-.trending-offers__section--left button {
-  background-color: #FF0000;
-  padding: 8px 20px;
-  border-radius: 8px;
-  border: none;
-  color: white;
-  font-size: 16px;
+.trending-offers__section--right {
+  flex: 0 0 auto;
+  width: 335px;
 }
 
 .newsletter-section {
@@ -1139,7 +1142,7 @@ p {
 }
 .newsletter-section__content {
   padding-left: 55px;
-  padding-right: 200px;
+  padding-right: 235px;
 }
 .newsletter-section__content h2 {
   font-size: 2em;
@@ -1148,7 +1151,7 @@ p {
 }
 .newsletter-section__content p {
   color: #6a6a6a;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 .newsletter-section__content .custom-input__append {
   padding: 12px 30px;
@@ -1204,6 +1207,12 @@ p {
     padding-left: 55px;
     padding-right: 146px;
   }
+  .trending-offers__section--left p {
+    letter-spacing: 0.08em;
+  }
+  .trending-offers__section--right {
+    width: 259px;
+  }
 }
 @media (max-width: 1199px) {
   .trending-offers__section--left h3 {
@@ -1212,6 +1221,9 @@ p {
   }
   .trending-offers__section--left p {
     line-height: 1.2;
+  }
+  .trending-offers__section--right {
+    width: 196px;
   }
   .newsletter-section__content {
     padding-right: 40px;
@@ -1232,14 +1244,14 @@ p {
   }
   .newsletter-section__content {
     padding-left: 0;
-    padding-right: 0px;
+    padding-right: 0;
   }
   .newsletter-section__content h2 {
     font-size: 1.7em;
     margin-bottom: 10px;
   }
   .newsletter-section__content p {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
   .newsletter-section__content .custom-input__field {
     padding: 10px 15px;
@@ -1272,23 +1284,26 @@ p {
   .trending-offers__section--left {
     order: 2;
     max-width: 100%;
-    margin-top: 12px;
+    margin-top: 10px;
     padding-right: 0;
   }
   .trending-offers__section--left h3 {
     line-height: 1.2;
+    margin-bottom: 10px;
   }
   .trending-offers__section--left p {
     line-height: 1.2;
     font-size: 0.9em;
-    margin-bottom: 22px;
+    margin-bottom: 16px;
+  }
+  .trending-offers__section--right {
+    width: 255px;
+    margin-bottom: 12px;
   }
   .trending-offers__section--right .trending__img {
     order: 1;
     -o-object-fit: contain;
        object-fit: contain;
-    max-width: 250px;
-    margin-bottom: 12px;
   }
   .newsletter-section__content h2 {
     font-size: 1.4em;
