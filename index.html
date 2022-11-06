@@ -107,10 +107,10 @@
                     <!-- Navbar Action Starts -->
                     <div class="navbar-content__item">
                         <ul class="navbar-content__item--action">
-                            
 
-                            <li class="rotate-y-160"> <i class=" las la-search"></i></li>
 
+                            <li class="rotate-y-160" data-bs-toggle="offcanvas" data-bs-target="#navbarSearchArea"
+                            aria-controls="navbarSearchArea"> <i class="las la-search"></i></li>
                             <li><a href="#"><i class="las la-user"></i></a></li>
                             <li>
                                 <i class="las la-shopping-cart"></i>
@@ -118,7 +118,6 @@
                             </li>
                             <li class="d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                                 aria-controls="offcanvasNavbar"><i class="las la-bars"></i></li>
-                            <!-- Open Off Canvas -->
                         </ul>
                     </div>
 
@@ -127,6 +126,18 @@
             </div>
         </div>
     </header>
+
+    <!-- Search Offcanvas -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="navbarSearchArea" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            ...
+        </div>
+    </div>
+    <!-- Search Offcanvas -->
     <!-- Header Ends -->
 
     <!--***********************
@@ -207,9 +218,11 @@
                         <div class="owl-carousel owl-theme hot-deals__carousel">
                             <div class="product-card">
                                 <div class="product-card__box">
-                                    <div class="product-card__info product-card__info--label1 product-card__info--left">15%
+                                    <div class="product-card__info product-card__info--label1 product-card__info--left">
+                                        15%
                                     </div>
-                                    <div class="product-card__info product-card__info--label2 product-card__info--right">
+                                    <div
+                                        class="product-card__info product-card__info--label2 product-card__info--right">
                                         New</div>
                                     <figure class="product-image">
                                         <img src="assets/img/wintersalecaro-1.png" alt="Product">
@@ -223,9 +236,11 @@
                             </div>
                             <div class="product-card">
                                 <div class="product-card__box">
-                                    <div class="product-card__info product-card__info--label1 product-card__info--left">15%
+                                    <div class="product-card__info product-card__info--label1 product-card__info--left">
+                                        15%
                                     </div>
-                                    <div class="product-card__info product-card__info--label2 product-card__info--right">
+                                    <div
+                                        class="product-card__info product-card__info--label2 product-card__info--right">
                                         New</div>
                                     <figure class="product-image">
                                         <img src="assets/img/wintersalecaro-2.png" alt="Product">
@@ -239,9 +254,11 @@
                             </div>
                             <div class="product-card">
                                 <div class="product-card__box">
-                                    <div class="product-card__info product-card__info--label1 product-card__info--left">15%
+                                    <div class="product-card__info product-card__info--label1 product-card__info--left">
+                                        15%
                                     </div>
-                                    <div class="product-card__info product-card__info--label2 product-card__info--right">
+                                    <div
+                                        class="product-card__info product-card__info--label2 product-card__info--right">
                                         New</div>
                                     <figure class="product-image">
                                         <img src="assets/img/wintersalecaro-1.png" alt="Product">
@@ -255,9 +272,11 @@
                             </div>
                             <div class="product-card">
                                 <div class="product-card__box">
-                                    <div class="product-card__info product-card__info--label1 product-card__info--left">15%
+                                    <div class="product-card__info product-card__info--label1 product-card__info--left">
+                                        15%
                                     </div>
-                                    <div class="product-card__info product-card__info--label2 product-card__info--right">
+                                    <div
+                                        class="product-card__info product-card__info--label2 product-card__info--right">
                                         New</div>
                                     <figure class="product-image">
                                         <img src="assets/img/wintersalecaro-2.png" alt="Product">
@@ -370,7 +389,7 @@
             SKEW SECTION STARTS
     ================================-->
 
-   <!-- <section class="product-info__section">
+    <!-- <section class="product-info__section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 product-info__item">
@@ -723,7 +742,7 @@
                             accusantium doloremque laudantium, totam rem aperia,
                             eaque natus error sit voluptatem
                         </p>
-                        <a  href="#" class="article-section__button">Read More</a>
+                        <a href="#" class="article-section__button">Read More</a>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 article-section pb-30">
                         <img class="article-section__img" src="assets/img/Rectangle-39-3.png" alt="">
@@ -734,7 +753,7 @@
                             accusantium doloremque laudantium, totam rem aperia,
                             eaque natus error sit voluptatem
                         </p>
-                        <a   href="#" class="article-section__button">Read More</a>
+                        <a href="#" class="article-section__button">Read More</a>
                     </div>
                     <div class="col-lg-4 col-md-6 col-sm-6 article-section pb-30">
                         <img class="article-section__img" src="assets/img/Rectangle-41-1.png" alt="">
@@ -745,7 +764,7 @@
                             accusantium doloremque laudantium, totam rem aperia,
                             eaque natus error sit voluptatem
                         </p>
-                        <a  href="#" class="article-section__button">Read More</a>
+                        <a href="#" class="article-section__button">Read More</a>
                     </div>
                 </div>
             </div>
@@ -754,7 +773,7 @@
     <!-- ENDS -->
 
     <!--******Footer Section****** stats-->
-        
+
     <footer class="bg-primary">
         <div class="container">
             <div class="footer-customer">
@@ -799,14 +818,20 @@
                                 <p>Enter email address get $20 off your first order</p>
                                 <div class="custom-input__group">
                                     <input type="text" placeholder="Enter email ID..." class="custom-input__field">
-                                    <button class="custom-input__append"><i class="lar la-paper-plane rotate-y-45"></i></button>
+                                    <button class="custom-input__append"><i
+                                            class="lar la-paper-plane rotate-y-45"></i></button>
                                 </div>
                                 <ul class="footer-info__item--icon">
-                                    <li><a href="https://www.facebook.com/" targrt="_blank"><i class="lab la-facebook-f"></i></a></li>
-                                    <li><a href="https://twitter.com/" target="_blank"><i class="lab la-twitter"></i></a></li>
-                                    <li><a href="https://www.instagram.com/?hl=en" target="_blank"><i class="lab la-instagram"></i></a></li>
-                                    <li><a href="https://www.youtube.com/" target="_blank"><i class="lab la-youtube"></i></a></li>
-                                    <li><a href="https://www.pinterest.com/" target="_blank"><i class="lab la-pinterest"></i></a></li>
+                                    <li><a href="https://www.facebook.com/" targrt="_blank"><i
+                                                class="lab la-facebook-f"></i></a></li>
+                                    <li><a href="https://twitter.com/" target="_blank"><i
+                                                class="lab la-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/?hl=en" target="_blank"><i
+                                                class="lab la-instagram"></i></a></li>
+                                    <li><a href="https://www.youtube.com/" target="_blank"><i
+                                                class="lab la-youtube"></i></a></li>
+                                    <li><a href="https://www.pinterest.com/" target="_blank"><i
+                                                class="lab la-pinterest"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -846,11 +871,11 @@
                     </div>
                 </div>
             </div>
-        <div class="footer-copyright">
+            <div class="footer-copyright">
                 <p>Copyright &#169 2022 cameraworld.com. All Rights Reserved</p>
             </div>
         </div>
-        
+
     </footer>
     <!-- ENDS -->
 
