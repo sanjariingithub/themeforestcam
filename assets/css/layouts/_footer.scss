@@ -59,7 +59,9 @@
 
             ul:not(.footer-info__item--icon) {
                 li {
+                   a{
                     color: #6A6A6A;
+                   }
 
                     &:not(:last-child) {
                         margin-bottom: 15px;
@@ -125,6 +127,7 @@
         }
     }
 }
+
 
 // RESPONSIVE STARTS
 
@@ -210,7 +213,7 @@
 
                     h3 {
                         font-size: 1.125em;
-                        margin-bottom: 5px;
+                        margin-bottom: 15px;
                     }
 
                     p {

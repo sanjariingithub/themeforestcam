@@ -117,9 +117,9 @@ jQuery(function ($) {
 
 });
 // Trending Offers Carousel starts
-$('.trending--offers__carousel').owlCarousel({
+$('.trending-offers__carousel').owlCarousel({
     loop: true,
-    margin: 15,
+    margin: 24,
     nav: true,
     dots: false,
     navText: ["<i class='las la-angle-left'></i>","<i class='las la-angle-right'></i>"],
@@ -144,7 +144,7 @@ for (let i = 0; i < featuredCarousel.length; i++) {
     console.log($("#featured-product-", i + 1));
     $(`#featured-product-${i + 1}`).owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 24,
         nav: true,
         dots: false,
         navText: ["<i class='las la-angle-left'></i>","<i class='las la-angle-right'></i>"],
