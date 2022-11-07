@@ -111,11 +111,16 @@
 
                             <li class="rotate-y-160" data-bs-toggle="offcanvas" data-bs-target="#navbarSearchArea"
                             aria-controls="navbarSearchArea"> <i class="las la-search"></i></li>
+
                             <li><a href="#"><i class="las la-user"></i></a></li>
-                            <li>
+                            <!-- <li>
                                 <i class="las la-shopping-cart"></i>
                                 <span class="navbar-action__badge">2</span>
-                            </li>
+                            </li>-->
+                            <li data-bs-toggle="offcanvas" data-bs-target="#navbarCartArea"
+                            aria-controls="navbarCartArea"> <i class="las la-shopping-cart"></i> <span class="navbar-action__badge">2</span></li>
+
+
                             <li class="d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                                 aria-controls="offcanvasNavbar"><i class="las la-bars"></i></li>
                         </ul>
@@ -127,17 +132,53 @@
         </div>
     </header>
 
-    <!-- Search Offcanvas -->
+    <!-- Search Offcanvas  Starts-->
     <div class="offcanvas offcanvas-top" tabindex="-1" id="navbarSearchArea" aria-labelledby="offcanvasTopLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            ...
+        <div class="offcanvas-body">      
+            <div class="navbar-search " ref="searchBox">
+                <div class="navbar-search-input">
+                    <input type="text" placeholder="Search...">
+                    <button type="button" class="search-button">
+                        <i class="las la-search"></i>
+                    </button>
+                </div>
+                <div class="navbar-search-cancel">
+                    <button type="button" class="cancel-button " class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <i class="las la-times"></i>
+                    </button>
+                </div>
+            </div>
+
         </div>
     </div>
-    <!-- Search Offcanvas -->
+
+    <!-- Search Offcanvas Ends -->
+     <!--  Cart Offcanvas Starts-->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarCartArea" aria-labelledby="offcanvasEndLabel">
+        <div class="offcanvas-header">
+            <div class="offcanvas-header__Cart">
+                <h3>Cart 2 </h3>
+            </div>
+            <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="las la-times"></i></button>
+        </div>
+         <div class="offcanvas-body">
+             
+             <div class="navbar-search " ref="searchBox">
+                 <div class="navbar-search-input">
+                     <input type="text" placeholder="Search...">
+                     <button type="button" class="search-button">
+                         <i class="las la-search"></i>
+                     </button>
+                 </div>
+                 
+             </div>
+             
+ 
+ 
+         </div>
+     </div>
+    <!-- Cart Offcanvas Ends -->
     <!-- Header Ends -->
 
     <!--***********************
