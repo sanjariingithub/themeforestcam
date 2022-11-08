@@ -588,36 +588,6 @@ input:focus, input:active {
   color: #ffffff;
   border-radius: 10px;
 }
-.navbar .navbar-content__item--action .dropdown-toggle::after {
-  content: none;
-}
-.navbar .navbar-content__item--action .dropdown-menu {
-  background-color: #ffffff;
-  width: 315px;
-  padding: 13px;
-  border-radius: 3px;
-  right: 0;
-  left: auto !important;
-  margin: 0;
-  transform: translateY(32px);
-}
-.navbar .navbar-content__item--action .form-group {
-  display: flex;
-  background-color: #010101;
-}
-.navbar .navbar-content__item--action .form-group .form-control {
-  border: none;
-  color: #ffffff;
-  background-color: #000;
-}
-.navbar .navbar-content__item--action .form-group button {
-  font-size: 20px;
-  color: #ffffff !important;
-  padding: 0;
-  background-color: transparent;
-  border: 0;
-  padding: 10px;
-}
 
 .offcanvas-header__info--item {
   font-size: 0.9375em;
@@ -628,7 +598,7 @@ input:focus, input:active {
 }
 
 .offcanvas.offcanvas-top {
-  height: 20vh;
+  height: 130px;
 }
 .offcanvas.offcanvas-top .offcanvas-body {
   overflow-y: unset;
@@ -636,45 +606,35 @@ input:focus, input:active {
 
 .navbar-search {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  height: 121px;
-  background-color: #ffffff;
-  pointer-events: all;
-  transition: opacity 0.3s linear, transform 0.3s ease-in-out;
+  justify-content: center;
+  align-items: center;
 }
 .navbar-search-input {
-  width: 500px;
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
 }
-.navbar-search-input input {
-  flex: 1;
-  border: 1px solid gray;
-  padding: 15px 15px;
-  border-radius: 6px;
-  height: 50px;
+.navbar-search-input .custom-input__group {
+  border: 1px solid #E3E3E3;
+  border-radius: 8px;
 }
-.navbar-search-input button {
-  font-size: 1.6em;
-  transform: translate(-50px, -22px);
+.navbar-search-input .custom-input__field {
+  padding: 10px 15px;
 }
-.navbar-search-input button i {
-  border-left: 1px solid #E3E3E3;
-  padding-left: 10px;
-  padding-right: 10px;
+.navbar-search-input .custom-input__append {
+  color: #ffffff;
+  font-size: 1.2em;
+  padding: 10px 15px 10px 15px;
+  background-color: #FF0000;
 }
 .navbar-search .cancel-button {
-  font-size: 1.9em;
-  font-weight: 700;
+  position: absolute;
+  right: 15px;
+  top: 30%;
+  font-size: 1.5em;
+  font-weight: 500;
   color: #010101;
-  line-height: 1;
-  width: 25px;
-  margin-top: 30px;
-  transform: translate(-22px, 15px);
+  transform: translateY(-50%);
 }
 
 @media (max-width: 991px) {
@@ -730,18 +690,22 @@ input:focus, input:active {
     max-width: 150px;
   }
   .navbar-search-input {
-    padding: 15px 20px;
+    width: 80%;
+    padding-right: 10px;
+    padding-left: 10px;
   }
-  .navbar-search-input input {
-    padding: 10px 10px;
+}
+@media (max-width: 575px) {
+  .navbar-search-input {
+    width: 80%;
+    padding-right: 10px;
+    padding-left: 10px;
   }
-  .navbar-search-input button {
-    font-size: 1.4em;
-    transform: translate(-42px, -2px);
-  }
-  .navbar-search .cancel-button {
-    font-size: 1.6em;
-    transform: translate(-22px, -32px);
+  .navbar-search-input .custom-input__append {
+    color: #ffffff;
+    font-size: 1em;
+    padding: 5px 10px 5px 10px;
+    background-color: #FF0000;
   }
 }
 @media (min-width: 992px) {
