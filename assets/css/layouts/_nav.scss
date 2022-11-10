@@ -153,57 +153,162 @@
     display: flex;
     justify-content: center;
     align-items: center; 
-   
-     &-input{
-       
-        width: 100%;
-        max-width: 500px;
-         position: relative;
+    height: 100%;
+    position: relative;
       .custom{
         &-input{
             &__group{
-                border: 1px solid $borderColor;
-                border-radius: 8px;
+                max-width: 500px;
+                width: 100%;
             }
             &__field{
                    padding: 10px 15px;
+                   border-color: #010101;
+                   border-style: solid;
+                   border-width: 1px 0 1px 1px;
             }
            
             &__append {
-                color: #ffffff ;
+                color: $secondaryColor ;
                 font-size: 1.2em;
                 padding: 10px 15px 10px 15px;
-                background-color: $secondaryColor;
+                border-color: #010101;
+                border-style: solid;
+                border-width: 1px  1px 1px 0;
             }
         }
       }
-    }
-    .cancel-button{
-       
+    
+    .cancel-button{ 
             position: absolute;
-            right: 15px;
-            top: 30%;
+            right:10px;
+            top: 50%;
             font-size: 1.5em;
             font-weight: 500;
             color: #010101;
-           transform: translateY(-50%);
-            
-       
+           transform: translateY(-50%);   
     }
 
 }
 }
-// Media query
-//@include breakpoint-max(767px) {
-   // .navbar {
-    //    &-content {
-     //       &__brand {
-     //           max-width: 150px;
-     //       }
-       // }
-   // }
+//cart section 
+.offcanvas.navbar-cart{
+    .offcanvas {
+        &-header{
+            &-content{
+                h3{
+                    font-size: 1.7em;
+                    color: $primaryColor;                 
+                }
+            }
+            .close-button{
+                font-size: 1.6em;
+                line-height: 1;
+            }
+        } 
 
-//}
+    }
+
+}
+.navbar{
+    &-cart{
+        &-model{
+            &-body{
+                
+               .cart{
+                &-model{
+                    &-title{
+                        h3{
+                            font-size: 1.6em;
+                            margin-bottom: 20px;
+                            color: $primaryColor;
+                         }
+
+                    }
+                    &-product{
+                        display: flex;
+                        padding: 0.8em 0.7em;
+                        border-bottom: 1px solid $borderColor;
+                    }
+                    &-image{
+                        max-width: 80px;
+                       width: 80px;
+                       height: 80px;
+                       border-radius: 50%;
+                       overflow: hidden;
+                       padding: 15px;
+                       overflow: hidden;
+                       margin-right: 15px;
+                      border: 2px dashed #7A7A7A;
+                    }
+                    &-content{
+                        flex: 1;
+                        max-width: 100%;
+                        width: 100%;
+                        h4{
+                            margin-bottom: 10px;
+                            color: $primaryColor;
+                        }
+                        
+                }
+                    
+                    &-action{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    &-quantity{
+                        display: flex;
+                        font-size: 1.1em;
+                        color: $primaryColor;
+                    }
+                    &-delete{
+                        font-size: 1.2em;
+                        color: $secondaryColor;
+                    }
+                   
+                   
+                   
+                }
+               
+               }
+            }
+          
+        }
+        
+    }
+    .cart{
+        &-model{
+            &-total{
+                display: flex;
+                 justify-content: space-between;
+                     margin-top: 10px;
+                   margin-bottom: 10px;
+                    font-size: 1.2em;
+            }
+
+        }
+    }
+   
+}
+.cart{
+    &-model{
+        &-total{
+            display: flex;
+             justify-content: space-between;
+                 margin-top: 10px;
+               margin-bottom: 20px;
+                font-size: 1.2em;
+        } 
+        &-button{
+            text-align: center;
+            .main-btn{
+                margin-bottom: 10px;
+            }
+        }  
+
+    }
+}
+
 
 @include breakpoint-max(991px) {
     // .navbar-content__item{
@@ -293,41 +398,23 @@
     }
     .navbar{
         &-search {
-             &-input{
-              // max-width: 250px;
-                width: 80%;
-               padding-right: 10px;
-               padding-left: 10px;
-               
-            }     
+            .cancel-button{ 
+                position: absolute;
+                right: 0;
+                top: -14px;
+                font-size: 1.5em;
+                font-weight: 500;
+                color: #010101;
+               transform: none;   
+        }
+    
+                
       }
     }
 
 
 }
-@include breakpoint-max(575px) {
-    .navbar{
-        &-search {
-             &-input{
-              // max-width: 250px;
-                width: 80%;
-               padding-right: 10px;
-               padding-left: 10px;
-                .custom{
-                    &-input{
-                        &__append {
-                            color: #ffffff ;
-                            font-size: 1em;
-                            padding: 5px 10px 5px 10px;
-                            background-color: $secondaryColor;
-                        }
-                    }
-                  }
-            }     
-      }
-    }
 
-}
 
 @include breakpoint-min(992px) {
     .navbar {

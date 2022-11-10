@@ -135,17 +135,15 @@
     <!-- Search Offcanvas  Starts-->
     <div class="offcanvas offcanvas-top" tabindex="-1" id="navbarSearchArea" aria-labelledby="offcanvasTopLabel">
         <div class="offcanvas-body">      
-            <div class="navbar-search " ref="searchBox">
-                <div class="navbar-search-input">
+            <div class="navbar-search">             
                     <div class="custom-input__group">
                         <input type="text" placeholder="Search..." class="custom-input__field">
                         <button class="custom-input__append"><i
                                 class="las la-search"></i></button>
-                    </div>                            
-                </div>              
-                   <button type="button" class="cancel-button " class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
-                        <i class="las la-times"></i>
-                    </button>             
+                                <button type="button" class="cancel-button " class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                                    <i class="las la-times"></i>
+                                </button>            
+                    </div>                                                   
             </div>
         </div>
     </div>
@@ -153,31 +151,101 @@
     
 
     <!-- Search Offcanvas Ends -->
+
      <!--  Cart Offcanvas Starts-->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarCartArea" aria-labelledby="offcanvasEndLabel">
-        <div class="offcanvas-header">
-            <div class="offcanvas-header__Cart">
-                <h3>Cart 2 </h3>
+     <div class="offcanvas offcanvas-end navbar-cart" tabindex="-1" id="navbarCartArea" aria-labelledby="offcanvasEndLabel">
+        <div class=" offcanvas-header">
+            <div class="offcanvas-header-content">
+                <h3>Cart (2)</h3>
             </div>
-            <button type="button" data-bs-dismiss="offcanvas" aria-label="Close"><i
+            <button type="button" class="close-button" data-bs-dismiss="offcanvas" aria-label="Close"><i
                     class="las la-times"></i></button>
         </div>
-         <div class="offcanvas-body">
-             
-             <div class="navbar-search " ref="searchBox">
-                 <div class="navbar-search-input">
-                     <input type="text" placeholder="Search...">
-                     <button type="button" class="search-button">
-                         <i class="las la-search"></i>
-                     </button>
-                 </div>
-                 
-             </div>
-             
- 
- 
-         </div>
-     </div>
+        <div class="offcanvas-body"> 
+            <div class=" navbar-cart-model-body">
+                <div class="cart-model-title">
+                <h3>My Order</h3>
+            </div>
+                <div class="cart-model-product">
+                    <div class="cart-model-image">
+                        <figure>
+                            <img src="assets/img/featured-1-cart.png" alt="Product" >
+                        </figure>
+                    </div>
+                    <div class="cart-model-content">
+                        <h4>Camera</h4>
+                        <div class="cart-model-action">
+                            <div class="cart-model-action-item">
+                                <div class="cart-model-quantity">
+                                    <p>1</p>
+                                    <p>X</p>
+                                    <p class="cart-quantity-price"> $4.50</p>
+                                </div>
+                            </div>
+                               <div class="cart-model-action-item">
+                                <div class="cart-model-delete">
+                                    <i class="las la-trash-alt"></i>
+                                </div>  
+                               </div>
+    
+                        </div>
+                    </div>
+                   
+
+                </div>
+
+            </div>
+
+            <div class=" navbar-cart-model-body">
+                <div class="cart-model-product">
+                    <div class="cart-model-image">
+                        <figure>
+                            <img src="assets/img/featured-1-cart.png" alt="Product" >
+                        </figure>
+                    </div>
+                    <div class="cart-model-content">
+                        <h4>Camera</h4>
+                        <div class="cart-model-action">
+                            <div class="cart-model-action-item">
+                                <div class="cart-model-quantity">
+                                    <p>1</p>
+                                    <p>X</p>
+                                    <p class="cart-quantity-price"> $4.50</p>
+                                </div>
+                            </div>
+                               <div class="cart-model-action-item">
+                                <div class="cart-model-delete">
+                                    <i class="las la-trash-alt"></i>
+                                </div>  
+                               </div>
+    
+                        </div>
+                    </div>
+                   
+
+                </div>
+               
+
+            </div>
+            <div class="cart-model-total">
+                <p>Total</p>
+                <p>$8</p>
+
+            </div>
+            <div class="cart-model-button">
+                <button class="main-btn">Check Out</button>
+               <!--  <button class="main-btn">View My shopping cart</button>-->
+
+            </div>
+            
+            
+
+
+            
+        </div>
+    </div>
+    
+    
     <!-- Cart Offcanvas Ends -->
     <!-- Header Ends -->
 
